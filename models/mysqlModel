@@ -1,0 +1,13 @@
+// models/mysqlModel.js
+const mysql = require('mysql');
+
+const connection = mysql.createConnection({
+  host: 'localhost',
+  user: 'root',
+  password: 'password',
+  database: 'proj2023',
+});
+
+connection.connect();
+
+module.exports = connection;
